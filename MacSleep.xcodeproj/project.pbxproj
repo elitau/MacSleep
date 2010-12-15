@@ -1,0 +1,568 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623260D0F684500981E51 /* MacSleepAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* MacSleepAppDelegate.mm */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+		2899E5220DE3E06400AC0155 /* MacSleepViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* MacSleepViewController.xib */; };
+		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		28D7ACF80DDB3853001CB0EB /* MacSleepViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* MacSleepViewController.m */; };
+		7402F88112B3AA340078C625 /* ssh.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7402F88012B3AA340078C625 /* ssh.mm */; };
+		7402F8F012B3AC0C0078C625 /* agent.c in Sources */ = {isa = PBXBuildFile; fileRef = 7402F8B212B3AC0C0078C625 /* agent.c */; };
+		7402F8F112B3AC0C0078C625 /* channel.c in Sources */ = {isa = PBXBuildFile; fileRef = 7402F8B312B3AC0C0078C625 /* channel.c */; };
+		7402F8F212B3AC0C0078C625 /* comp.c in Sources */ = {isa = PBXBuildFile; fileRef = 7402F8B512B3AC0C0078C625 /* comp.c */; };
+		7402F8F312B3AC0C0078C625 /* crypt.c in Sources */ = {isa = PBXBuildFile; fileRef = 7402F8B712B3AC0C0078C625 /* crypt.c */; };
+		7402F8F412B3AC0C0078C625 /* global.c in Sources */ = {isa = PBXBuildFile; fileRef = 7402F8B812B3AC0C0078C625 /* global.c */; };
+		7402F8F512B3AC0C0078C625 /* hostkey.c in Sources */ = {isa = PBXBuildFile; fileRef = 7402F8B912B3AC0C0078C625 /* hostkey.c */; };
+		7402F8F612B3AC0C0078C625 /* keepalive.c in Sources */ = {isa = PBXBuildFile; fileRef = 7402F8BA12B3AC0C0078C625 /* keepalive.c */; };
+		7402F8F712B3AC0C0078C625 /* kex.c in Sources */ = {isa = PBXBuildFile; fileRef = 7402F8BB12B3AC0C0078C625 /* kex.c */; };
+		7402F8F812B3AC0C0078C625 /* knownhost.c in Sources */ = {isa = PBXBuildFile; fileRef = 7402F8BC12B3AC0C0078C625 /* knownhost.c */; };
+		7402F8F912B3AC0C0078C625 /* libgcrypt.c in Sources */ = {isa = PBXBuildFile; fileRef = 7402F8BD12B3AC0C0078C625 /* libgcrypt.c */; };
+		7402F8FB12B3AC0C0078C625 /* mac.c in Sources */ = {isa = PBXBuildFile; fileRef = 7402F8C212B3AC0C0078C625 /* mac.c */; };
+		7402F8FF12B3AC0C0078C625 /* misc.c in Sources */ = {isa = PBXBuildFile; fileRef = 7402F8C712B3AC0C0078C625 /* misc.c */; };
+		7402F90112B3AC0C0078C625 /* openssl.c in Sources */ = {isa = PBXBuildFile; fileRef = 7402F8CA12B3AC0C0078C625 /* openssl.c */; };
+		7402F90212B3AC0C0078C625 /* packet.c in Sources */ = {isa = PBXBuildFile; fileRef = 7402F8CC12B3AC0C0078C625 /* packet.c */; };
+		7402F90312B3AC0C0078C625 /* pem.c in Sources */ = {isa = PBXBuildFile; fileRef = 7402F8CE12B3AC0C0078C625 /* pem.c */; };
+		7402F90412B3AC0C0078C625 /* publickey.c in Sources */ = {isa = PBXBuildFile; fileRef = 7402F8CF12B3AC0C0078C625 /* publickey.c */; };
+		7402F90512B3AC0C0078C625 /* scp.c in Sources */ = {isa = PBXBuildFile; fileRef = 7402F8D012B3AC0C0078C625 /* scp.c */; };
+		7402F90612B3AC0C0078C625 /* session.c in Sources */ = {isa = PBXBuildFile; fileRef = 7402F8D112B3AC0C0078C625 /* session.c */; };
+		7402F90712B3AC0C0078C625 /* sftp.c in Sources */ = {isa = PBXBuildFile; fileRef = 7402F8D312B3AC0C0078C625 /* sftp.c */; };
+		7402F90912B3AC0C0078C625 /* transport.c in Sources */ = {isa = PBXBuildFile; fileRef = 7402F8D512B3AC0C0078C625 /* transport.c */; };
+		7402F90A12B3AC0C0078C625 /* userauth.c in Sources */ = {isa = PBXBuildFile; fileRef = 7402F8D712B3AC0C0078C625 /* userauth.c */; };
+		7402F90B12B3AC0C0078C625 /* version.c in Sources */ = {isa = PBXBuildFile; fileRef = 7402F8D912B3AC0C0078C625 /* version.c */; };
+		7402F92912B3AEFE0078C625 /* libcrypto_arm.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7402F92712B3AEFE0078C625 /* libcrypto_arm.a */; };
+		7402F92A12B3AEFE0078C625 /* libssl_arm.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7402F92812B3AEFE0078C625 /* libssl_arm.a */; };
+		7402F98412B3AF9C0078C625 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		7402F98512B3AF9C0078C625 /* MacSleepViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* MacSleepViewController.xib */; };
+		7402F98712B3AF9C0078C625 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		7402F98812B3AF9C0078C625 /* MacSleepAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* MacSleepAppDelegate.mm */; };
+		7402F98912B3AF9C0078C625 /* MacSleepViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* MacSleepViewController.m */; };
+		7402F98A12B3AF9C0078C625 /* ssh.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7402F88012B3AA340078C625 /* ssh.mm */; };
+		7402F98B12B3AF9C0078C625 /* agent.c in Sources */ = {isa = PBXBuildFile; fileRef = 7402F8B212B3AC0C0078C625 /* agent.c */; };
+		7402F98C12B3AF9C0078C625 /* channel.c in Sources */ = {isa = PBXBuildFile; fileRef = 7402F8B312B3AC0C0078C625 /* channel.c */; };
+		7402F98D12B3AF9C0078C625 /* comp.c in Sources */ = {isa = PBXBuildFile; fileRef = 7402F8B512B3AC0C0078C625 /* comp.c */; };
+		7402F98E12B3AF9C0078C625 /* crypt.c in Sources */ = {isa = PBXBuildFile; fileRef = 7402F8B712B3AC0C0078C625 /* crypt.c */; };
+		7402F98F12B3AF9C0078C625 /* global.c in Sources */ = {isa = PBXBuildFile; fileRef = 7402F8B812B3AC0C0078C625 /* global.c */; };
+		7402F99012B3AF9C0078C625 /* hostkey.c in Sources */ = {isa = PBXBuildFile; fileRef = 7402F8B912B3AC0C0078C625 /* hostkey.c */; };
+		7402F99112B3AF9C0078C625 /* keepalive.c in Sources */ = {isa = PBXBuildFile; fileRef = 7402F8BA12B3AC0C0078C625 /* keepalive.c */; };
+		7402F99212B3AF9C0078C625 /* kex.c in Sources */ = {isa = PBXBuildFile; fileRef = 7402F8BB12B3AC0C0078C625 /* kex.c */; };
+		7402F99312B3AF9C0078C625 /* knownhost.c in Sources */ = {isa = PBXBuildFile; fileRef = 7402F8BC12B3AC0C0078C625 /* knownhost.c */; };
+		7402F99412B3AF9C0078C625 /* libgcrypt.c in Sources */ = {isa = PBXBuildFile; fileRef = 7402F8BD12B3AC0C0078C625 /* libgcrypt.c */; };
+		7402F99512B3AF9C0078C625 /* mac.c in Sources */ = {isa = PBXBuildFile; fileRef = 7402F8C212B3AC0C0078C625 /* mac.c */; };
+		7402F99612B3AF9C0078C625 /* misc.c in Sources */ = {isa = PBXBuildFile; fileRef = 7402F8C712B3AC0C0078C625 /* misc.c */; };
+		7402F99712B3AF9C0078C625 /* openssl.c in Sources */ = {isa = PBXBuildFile; fileRef = 7402F8CA12B3AC0C0078C625 /* openssl.c */; };
+		7402F99812B3AF9C0078C625 /* packet.c in Sources */ = {isa = PBXBuildFile; fileRef = 7402F8CC12B3AC0C0078C625 /* packet.c */; };
+		7402F99912B3AF9C0078C625 /* pem.c in Sources */ = {isa = PBXBuildFile; fileRef = 7402F8CE12B3AC0C0078C625 /* pem.c */; };
+		7402F99A12B3AF9C0078C625 /* publickey.c in Sources */ = {isa = PBXBuildFile; fileRef = 7402F8CF12B3AC0C0078C625 /* publickey.c */; };
+		7402F99B12B3AF9C0078C625 /* scp.c in Sources */ = {isa = PBXBuildFile; fileRef = 7402F8D012B3AC0C0078C625 /* scp.c */; };
+		7402F99C12B3AF9C0078C625 /* session.c in Sources */ = {isa = PBXBuildFile; fileRef = 7402F8D112B3AC0C0078C625 /* session.c */; };
+		7402F99D12B3AF9C0078C625 /* sftp.c in Sources */ = {isa = PBXBuildFile; fileRef = 7402F8D312B3AC0C0078C625 /* sftp.c */; };
+		7402F99E12B3AF9C0078C625 /* transport.c in Sources */ = {isa = PBXBuildFile; fileRef = 7402F8D512B3AC0C0078C625 /* transport.c */; };
+		7402F99F12B3AF9C0078C625 /* userauth.c in Sources */ = {isa = PBXBuildFile; fileRef = 7402F8D712B3AC0C0078C625 /* userauth.c */; };
+		7402F9A012B3AF9C0078C625 /* version.c in Sources */ = {isa = PBXBuildFile; fileRef = 7402F8D912B3AC0C0078C625 /* version.c */; };
+		7402F9A412B3AF9C0078C625 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		7402F9A512B3AF9C0078C625 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		7402F9A612B3AF9C0078C625 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+		7402F9B112B3AFBE0078C625 /* libcrypto_i386.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7402F9AF12B3AFBE0078C625 /* libcrypto_i386.a */; };
+		7402F9B212B3AFBE0078C625 /* libssl_i386.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7402F9B012B3AFBE0078C625 /* libssl_i386.a */; };
+		7402F9BC12B3B0180078C625 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7402F9BB12B3B0180078C625 /* libz.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* MacSleepAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacSleepAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* MacSleepAppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MacSleepAppDelegate.mm; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* MacSleep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacSleep.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2899E5210DE3E06400AC0155 /* MacSleepViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MacSleepViewController.xib; sourceTree = "<group>"; };
+		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		28D7ACF60DDB3853001CB0EB /* MacSleepViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacSleepViewController.h; sourceTree = "<group>"; };
+		28D7ACF70DDB3853001CB0EB /* MacSleepViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MacSleepViewController.m; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* MacSleep_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacSleep_Prefix.pch; sourceTree = "<group>"; };
+		7402F87F12B3AA340078C625 /* ssh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ssh.h; sourceTree = "<group>"; };
+		7402F88012B3AA340078C625 /* ssh.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ssh.mm; sourceTree = "<group>"; };
+		7402F8B212B3AC0C0078C625 /* agent.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = agent.c; sourceTree = "<group>"; };
+		7402F8B312B3AC0C0078C625 /* channel.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = channel.c; sourceTree = "<group>"; };
+		7402F8B412B3AC0C0078C625 /* channel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = channel.h; sourceTree = "<group>"; };
+		7402F8B512B3AC0C0078C625 /* comp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = comp.c; sourceTree = "<group>"; };
+		7402F8B612B3AC0C0078C625 /* comp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = comp.h; sourceTree = "<group>"; };
+		7402F8B712B3AC0C0078C625 /* crypt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = crypt.c; sourceTree = "<group>"; };
+		7402F8B812B3AC0C0078C625 /* global.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = global.c; sourceTree = "<group>"; };
+		7402F8B912B3AC0C0078C625 /* hostkey.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hostkey.c; sourceTree = "<group>"; };
+		7402F8BA12B3AC0C0078C625 /* keepalive.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = keepalive.c; sourceTree = "<group>"; };
+		7402F8BB12B3AC0C0078C625 /* kex.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = kex.c; sourceTree = "<group>"; };
+		7402F8BC12B3AC0C0078C625 /* knownhost.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = knownhost.c; sourceTree = "<group>"; };
+		7402F8BD12B3AC0C0078C625 /* libgcrypt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = libgcrypt.c; sourceTree = "<group>"; };
+		7402F8BE12B3AC0C0078C625 /* libgcrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libgcrypt.h; sourceTree = "<group>"; };
+		7402F8BF12B3AC0C0078C625 /* libssh2_config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libssh2_config.h; sourceTree = "<group>"; };
+		7402F8C112B3AC0C0078C625 /* libssh2_priv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libssh2_priv.h; sourceTree = "<group>"; };
+		7402F8C212B3AC0C0078C625 /* mac.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mac.c; sourceTree = "<group>"; };
+		7402F8C312B3AC0C0078C625 /* mac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mac.h; sourceTree = "<group>"; };
+		7402F8C712B3AC0C0078C625 /* misc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = misc.c; sourceTree = "<group>"; };
+		7402F8C812B3AC0C0078C625 /* misc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = misc.h; sourceTree = "<group>"; };
+		7402F8CA12B3AC0C0078C625 /* openssl.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = openssl.c; sourceTree = "<group>"; };
+		7402F8CB12B3AC0C0078C625 /* openssl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = openssl.h; sourceTree = "<group>"; };
+		7402F8CC12B3AC0C0078C625 /* packet.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = packet.c; sourceTree = "<group>"; };
+		7402F8CD12B3AC0C0078C625 /* packet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = packet.h; sourceTree = "<group>"; };
+		7402F8CE12B3AC0C0078C625 /* pem.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pem.c; sourceTree = "<group>"; };
+		7402F8CF12B3AC0C0078C625 /* publickey.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = publickey.c; sourceTree = "<group>"; };
+		7402F8D012B3AC0C0078C625 /* scp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = scp.c; sourceTree = "<group>"; };
+		7402F8D112B3AC0C0078C625 /* session.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = session.c; sourceTree = "<group>"; };
+		7402F8D212B3AC0C0078C625 /* session.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = session.h; sourceTree = "<group>"; };
+		7402F8D312B3AC0C0078C625 /* sftp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sftp.c; sourceTree = "<group>"; };
+		7402F8D512B3AC0C0078C625 /* transport.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = transport.c; sourceTree = "<group>"; };
+		7402F8D612B3AC0C0078C625 /* transport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = transport.h; sourceTree = "<group>"; };
+		7402F8D712B3AC0C0078C625 /* userauth.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = userauth.c; sourceTree = "<group>"; };
+		7402F8D812B3AC0C0078C625 /* userauth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = userauth.h; sourceTree = "<group>"; };
+		7402F8D912B3AC0C0078C625 /* version.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = version.c; sourceTree = "<group>"; };
+		7402F92712B3AEFE0078C625 /* libcrypto_arm.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto_arm.a; path = "compiled_libraries/openssl-0.9.8j_arm/lib/libcrypto_arm.a"; sourceTree = SOURCE_ROOT; };
+		7402F92812B3AEFE0078C625 /* libssl_arm.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl_arm.a; path = "compiled_libraries/openssl-0.9.8j_arm/lib/libssl_arm.a"; sourceTree = SOURCE_ROOT; };
+		7402F9AA12B3AF9C0078C625 /* MacSleep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacSleep.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7402F9AC12B3AF9C0078C625 /* MacSleep-Info copy.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MacSleep-Info copy.plist"; sourceTree = "<group>"; };
+		7402F9AF12B3AFBE0078C625 /* libcrypto_i386.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto_i386.a; path = "compiled_libraries/openssl-0.9.8j_i386/lib/libcrypto_i386.a"; sourceTree = SOURCE_ROOT; };
+		7402F9B012B3AFBE0078C625 /* libssl_i386.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl_i386.a; path = "compiled_libraries/openssl-0.9.8j_i386/lib/libssl_i386.a"; sourceTree = SOURCE_ROOT; };
+		7402F9BB12B3B0180078C625 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		8D1107310486CEB800E47090 /* MacSleep-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "MacSleep-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7402F92912B3AEFE0078C625 /* libcrypto_arm.a in Frameworks */,
+				7402F92A12B3AEFE0078C625 /* libssl_arm.a in Frameworks */,
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7402F9A112B3AF9C0078C625 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7402F9A412B3AF9C0078C625 /* Foundation.framework in Frameworks */,
+				7402F9A512B3AF9C0078C625 /* UIKit.framework in Frameworks */,
+				7402F9A612B3AF9C0078C625 /* CoreGraphics.framework in Frameworks */,
+				7402F9B112B3AFBE0078C625 /* libcrypto_i386.a in Frameworks */,
+				7402F9B212B3AFBE0078C625 /* libssl_i386.a in Frameworks */,
+				7402F9BC12B3B0180078C625 /* libz.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1D3623240D0F684500981E51 /* MacSleepAppDelegate.h */,
+				1D3623250D0F684500981E51 /* MacSleepAppDelegate.mm */,
+				28D7ACF60DDB3853001CB0EB /* MacSleepViewController.h */,
+				28D7ACF70DDB3853001CB0EB /* MacSleepViewController.m */,
+				7402F87F12B3AA340078C625 /* ssh.h */,
+				7402F88012B3AA340078C625 /* ssh.mm */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* MacSleep.app */,
+				7402F9AA12B3AF9C0078C625 /* MacSleep.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				7402F89A12B3AC0C0078C625 /* src */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+				7402F9BB12B3B0180078C625 /* libz.dylib */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* MacSleep_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2899E5210DE3E06400AC0155 /* MacSleepViewController.xib */,
+				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				8D1107310486CEB800E47090 /* MacSleep-Info.plist */,
+				7402F9AC12B3AF9C0078C625 /* MacSleep-Info copy.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7402F89A12B3AC0C0078C625 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				7402F9AF12B3AFBE0078C625 /* libcrypto_i386.a */,
+				7402F9B012B3AFBE0078C625 /* libssl_i386.a */,
+				7402F92712B3AEFE0078C625 /* libcrypto_arm.a */,
+				7402F92812B3AEFE0078C625 /* libssl_arm.a */,
+				7402F8B212B3AC0C0078C625 /* agent.c */,
+				7402F8B312B3AC0C0078C625 /* channel.c */,
+				7402F8B412B3AC0C0078C625 /* channel.h */,
+				7402F8B512B3AC0C0078C625 /* comp.c */,
+				7402F8B612B3AC0C0078C625 /* comp.h */,
+				7402F8B712B3AC0C0078C625 /* crypt.c */,
+				7402F8B812B3AC0C0078C625 /* global.c */,
+				7402F8B912B3AC0C0078C625 /* hostkey.c */,
+				7402F8BA12B3AC0C0078C625 /* keepalive.c */,
+				7402F8BB12B3AC0C0078C625 /* kex.c */,
+				7402F8BC12B3AC0C0078C625 /* knownhost.c */,
+				7402F8BD12B3AC0C0078C625 /* libgcrypt.c */,
+				7402F8BE12B3AC0C0078C625 /* libgcrypt.h */,
+				7402F8BF12B3AC0C0078C625 /* libssh2_config.h */,
+				7402F8C112B3AC0C0078C625 /* libssh2_priv.h */,
+				7402F8C212B3AC0C0078C625 /* mac.c */,
+				7402F8C312B3AC0C0078C625 /* mac.h */,
+				7402F8C712B3AC0C0078C625 /* misc.c */,
+				7402F8C812B3AC0C0078C625 /* misc.h */,
+				7402F8CA12B3AC0C0078C625 /* openssl.c */,
+				7402F8CB12B3AC0C0078C625 /* openssl.h */,
+				7402F8CC12B3AC0C0078C625 /* packet.c */,
+				7402F8CD12B3AC0C0078C625 /* packet.h */,
+				7402F8CE12B3AC0C0078C625 /* pem.c */,
+				7402F8CF12B3AC0C0078C625 /* publickey.c */,
+				7402F8D012B3AC0C0078C625 /* scp.c */,
+				7402F8D112B3AC0C0078C625 /* session.c */,
+				7402F8D212B3AC0C0078C625 /* session.h */,
+				7402F8D312B3AC0C0078C625 /* sftp.c */,
+				7402F8D512B3AC0C0078C625 /* transport.c */,
+				7402F8D612B3AC0C0078C625 /* transport.h */,
+				7402F8D712B3AC0C0078C625 /* userauth.c */,
+				7402F8D812B3AC0C0078C625 /* userauth.h */,
+				7402F8D912B3AC0C0078C625 /* version.c */,
+			);
+			name = src;
+			path = "libssh2-1.2.7/src";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* MacSleep */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "MacSleep" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MacSleep;
+			productName = MacSleep;
+			productReference = 1D6058910D05DD3D006BFB54 /* MacSleep.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7402F98212B3AF9C0078C625 /* MacSleep Simulator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7402F9A712B3AF9C0078C625 /* Build configuration list for PBXNativeTarget "MacSleep Simulator" */;
+			buildPhases = (
+				7402F98312B3AF9C0078C625 /* Resources */,
+				7402F98612B3AF9C0078C625 /* Sources */,
+				7402F9A112B3AF9C0078C625 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MacSleep Simulator";
+			productName = MacSleep;
+			productReference = 7402F9AA12B3AF9C0078C625 /* MacSleep.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "MacSleep" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* MacSleep */,
+				7402F98212B3AF9C0078C625 /* MacSleep Simulator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
+				2899E5220DE3E06400AC0155 /* MacSleepViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7402F98312B3AF9C0078C625 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7402F98412B3AF9C0078C625 /* MainWindow.xib in Resources */,
+				7402F98512B3AF9C0078C625 /* MacSleepViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* MacSleepAppDelegate.mm in Sources */,
+				28D7ACF80DDB3853001CB0EB /* MacSleepViewController.m in Sources */,
+				7402F88112B3AA340078C625 /* ssh.mm in Sources */,
+				7402F8F012B3AC0C0078C625 /* agent.c in Sources */,
+				7402F8F112B3AC0C0078C625 /* channel.c in Sources */,
+				7402F8F212B3AC0C0078C625 /* comp.c in Sources */,
+				7402F8F312B3AC0C0078C625 /* crypt.c in Sources */,
+				7402F8F412B3AC0C0078C625 /* global.c in Sources */,
+				7402F8F512B3AC0C0078C625 /* hostkey.c in Sources */,
+				7402F8F612B3AC0C0078C625 /* keepalive.c in Sources */,
+				7402F8F712B3AC0C0078C625 /* kex.c in Sources */,
+				7402F8F812B3AC0C0078C625 /* knownhost.c in Sources */,
+				7402F8F912B3AC0C0078C625 /* libgcrypt.c in Sources */,
+				7402F8FB12B3AC0C0078C625 /* mac.c in Sources */,
+				7402F8FF12B3AC0C0078C625 /* misc.c in Sources */,
+				7402F90112B3AC0C0078C625 /* openssl.c in Sources */,
+				7402F90212B3AC0C0078C625 /* packet.c in Sources */,
+				7402F90312B3AC0C0078C625 /* pem.c in Sources */,
+				7402F90412B3AC0C0078C625 /* publickey.c in Sources */,
+				7402F90512B3AC0C0078C625 /* scp.c in Sources */,
+				7402F90612B3AC0C0078C625 /* session.c in Sources */,
+				7402F90712B3AC0C0078C625 /* sftp.c in Sources */,
+				7402F90912B3AC0C0078C625 /* transport.c in Sources */,
+				7402F90A12B3AC0C0078C625 /* userauth.c in Sources */,
+				7402F90B12B3AC0C0078C625 /* version.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7402F98612B3AF9C0078C625 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7402F98712B3AF9C0078C625 /* main.m in Sources */,
+				7402F98812B3AF9C0078C625 /* MacSleepAppDelegate.mm in Sources */,
+				7402F98912B3AF9C0078C625 /* MacSleepViewController.m in Sources */,
+				7402F98A12B3AF9C0078C625 /* ssh.mm in Sources */,
+				7402F98B12B3AF9C0078C625 /* agent.c in Sources */,
+				7402F98C12B3AF9C0078C625 /* channel.c in Sources */,
+				7402F98D12B3AF9C0078C625 /* comp.c in Sources */,
+				7402F98E12B3AF9C0078C625 /* crypt.c in Sources */,
+				7402F98F12B3AF9C0078C625 /* global.c in Sources */,
+				7402F99012B3AF9C0078C625 /* hostkey.c in Sources */,
+				7402F99112B3AF9C0078C625 /* keepalive.c in Sources */,
+				7402F99212B3AF9C0078C625 /* kex.c in Sources */,
+				7402F99312B3AF9C0078C625 /* knownhost.c in Sources */,
+				7402F99412B3AF9C0078C625 /* libgcrypt.c in Sources */,
+				7402F99512B3AF9C0078C625 /* mac.c in Sources */,
+				7402F99612B3AF9C0078C625 /* misc.c in Sources */,
+				7402F99712B3AF9C0078C625 /* openssl.c in Sources */,
+				7402F99812B3AF9C0078C625 /* packet.c in Sources */,
+				7402F99912B3AF9C0078C625 /* pem.c in Sources */,
+				7402F99A12B3AF9C0078C625 /* publickey.c in Sources */,
+				7402F99B12B3AF9C0078C625 /* scp.c in Sources */,
+				7402F99C12B3AF9C0078C625 /* session.c in Sources */,
+				7402F99D12B3AF9C0078C625 /* sftp.c in Sources */,
+				7402F99E12B3AF9C0078C625 /* transport.c in Sources */,
+				7402F99F12B3AF9C0078C625 /* userauth.c in Sources */,
+				7402F9A012B3AF9C0078C625 /* version.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MacSleep_Prefix.pch;
+				INFOPLIST_FILE = "MacSleep-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/compiled_libraries/openssl-0.9.8j_arm/lib\"",
+				);
+				PRODUCT_NAME = MacSleep;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MacSleep_Prefix.pch;
+				INFOPLIST_FILE = "MacSleep-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/compiled_libraries/openssl-0.9.8j_arm/lib\"",
+				);
+				PRODUCT_NAME = MacSleep;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7402F9A812B3AF9C0078C625 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MacSleep_Prefix.pch;
+				INFOPLIST_FILE = "MacSleep-Info copy.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\\\"$(SRCROOT)/compiled_libraries/openssl-0.9.8j_arm/lib\\\"",
+					"\"$(SRCROOT)/compiled_libraries/openssl-0.9.8j_i386/lib\"",
+				);
+				PRODUCT_NAME = MacSleep;
+			};
+			name = Debug;
+		};
+		7402F9A912B3AF9C0078C625 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MacSleep_Prefix.pch;
+				INFOPLIST_FILE = "MacSleep-Info copy.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\\\"$(SRCROOT)/compiled_libraries/openssl-0.9.8j_arm/lib\\\"",
+					"\"$(SRCROOT)/compiled_libraries/openssl-0.9.8j_i386/lib\"",
+				);
+				PRODUCT_NAME = MacSleep;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"compiled_libraries/**",
+					"libssh2-1.2.7/**",
+				);
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.1;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "MacSleep" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7402F9A712B3AF9C0078C625 /* Build configuration list for PBXNativeTarget "MacSleep Simulator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7402F9A812B3AF9C0078C625 /* Debug */,
+				7402F9A912B3AF9C0078C625 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "MacSleep" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
